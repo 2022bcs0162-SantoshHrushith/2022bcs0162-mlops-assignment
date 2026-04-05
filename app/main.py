@@ -4,8 +4,8 @@ from src.predict import predict
 
 app = FastAPI()
 
-NAME = "YOUR_NAME"
-ROLL = "YOUR_ROLLNO"
+NAME = "Santosh Hrushith Yelamanchili"
+ROLL = "2022bcs0162"
 
 class InputData(BaseModel):
     Pclass: int
