@@ -7,7 +7,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, f1_score
 import joblib
 import argparse
+import os
 
+os.makedirs("models", exist_ok=True)
 # Arguments for experiment variation
 parser = argparse.ArgumentParser()
 parser.add_argument("--model", type=str, default="rf")
