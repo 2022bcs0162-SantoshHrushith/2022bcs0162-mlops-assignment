@@ -35,3 +35,10 @@ jobs:
 
       - name: Train model
         run: python src/train.py --model rf --max_depth 5 --features all
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: outputs
+          path: |
+            models/
