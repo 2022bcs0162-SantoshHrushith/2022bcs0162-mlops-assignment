@@ -41,7 +41,7 @@ jobs:
         run: dvc pull
 
       - name: Train model
-        run:  python src/train.py --model rf --max_depth 5 --features reduced
+        run:  python src/train.py --model lr --features all
 
       - name: Extract Metrics
         id: metrics
